@@ -40,8 +40,8 @@
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 55%;
-  transform: translateY(1px);
+  object-position: center;
   border: 2px solid var(--color-bg);
   box-shadow: 0 0 0 1px var(--color-border);
+  flex-shrink: 0;
 }
