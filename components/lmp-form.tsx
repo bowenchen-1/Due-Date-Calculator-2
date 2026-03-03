@@ -1,6 +1,7 @@
 import styles from "./lmp-form.module.css";
 import { LanguageCode } from "../lib/types";
 import { t } from "../lib/i18n";
+import { normalizeISODateInput } from "../lib/date-utils";
 
 export default function LmpForm({
   language,
@@ -36,7 +37,7 @@ export default function LmpForm({
           pattern="\d{4}-\d{2}-\d{2}"
           maxLength={10}
           value={lmpDate}
-          onChange={(event) => onLmpDateChange(event.target.value)}
+          onChange={(event) => onLmpDateChange(normalizeISODateInput(event.target.value))}
         />
         <span className={styles.helper}>{t(language, "lmpHelper")}</span>
         <span className={styles.helper}>{t(language, "dateFormatHelper")}</span>

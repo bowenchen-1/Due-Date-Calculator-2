@@ -1,6 +1,7 @@
 import styles from "./ivf-form.module.css";
 import { LanguageCode } from "../lib/types";
 import { t } from "../lib/i18n";
+import { normalizeISODateInput } from "../lib/date-utils";
 
 export default function IvfForm({
   language,
@@ -38,7 +39,7 @@ export default function IvfForm({
           pattern="\d{4}-\d{2}-\d{2}"
           maxLength={10}
           value={transferDate}
-          onChange={(event) => onTransferDateChange(event.target.value)}
+          onChange={(event) => onTransferDateChange(normalizeISODateInput(event.target.value))}
         />
         <span className={styles.helper}>{t(language, "ivfHelper")}</span>
         <span className={styles.helper}>{t(language, "dateFormatHelper")}</span>

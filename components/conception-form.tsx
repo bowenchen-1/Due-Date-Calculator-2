@@ -1,6 +1,7 @@
 import styles from "./conception-form.module.css";
 import { LanguageCode } from "../lib/types";
 import { t } from "../lib/i18n";
+import { normalizeISODateInput } from "../lib/date-utils";
 
 export default function ConceptionForm({
   language,
@@ -30,7 +31,7 @@ export default function ConceptionForm({
           pattern="\d{4}-\d{2}-\d{2}"
           maxLength={10}
           value={conceptionDate}
-          onChange={(event) => onConceptionDateChange(event.target.value)}
+          onChange={(event) => onConceptionDateChange(normalizeISODateInput(event.target.value))}
         />
         <span className={styles.helper}>{t(language, "conceptionHelper")}</span>
         <span className={styles.helper}>{t(language, "dateFormatHelper")}</span>
