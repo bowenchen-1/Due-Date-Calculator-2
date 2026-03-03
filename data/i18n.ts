@@ -71,7 +71,7 @@ export type TranslationKey =
 
 export const translations: Record<LanguageCode, Record<TranslationKey, string>> = {
   "en": {
-    siteName: "Pregnancy Timeline Tool",
+    siteName: "Due Date Calculator",
     languageLabel: "Language",
     heroTitle: "Pregnancy Due Date Calculator",
     heroSubtitle:

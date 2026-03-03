@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HomePage from "../components/home-page";
 
 export const metadata: Metadata = {
-  title: "Pregnancy Due Date Calculator | Pregnancy Timeline Tool",
+  title: "Pregnancy Due Date Calculator | Calculate by LMP or Conception",
   description:
-    "Calculate your due date using LMP or conception date. Get a clear pregnancy timeline, gestational age, and a privacy-safe export.",
+    "Calculate your pregnancy due date using your last menstrual period (LMP) or conception date. Get an estimated pregnancy timeline and week-by-week overview instantly.",
   keywords: [
     "pregnancy due date calculator",
     "due date calculator",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pregnancy Due Date Calculator",
     description:
-      "Calculate your due date from LMP or conception date and view a clear, printable pregnancy timeline.",
+      "Calculate your pregnancy due date using your last menstrual period (LMP) or conception date. Get an estimated pregnancy timeline and week-by-week overview instantly.",
     type: "website",
     url: "/",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pregnancy Due Date Calculator",
     description:
-      "Calculate your due date from LMP or conception date and view a clear, printable pregnancy timeline.",
+      "Calculate your pregnancy due date using your last menstrual period (LMP) or conception date. Get an estimated pregnancy timeline and week-by-week overview instantly.",
     images: ["/logo-full.png"]
   },
   robots: {

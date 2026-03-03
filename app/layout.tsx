@@ -5,8 +5,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
-  applicationName: "Pregnancy Timeline Tool",
-  title: "Pregnancy Timeline Tool",
+  applicationName: "Due Date Calculator",
+  title: "Due Date Calculator",
   description: "Pregnancy due date calculator with a clear timeline and privacy-safe export.",
   icons: {
     icon: "/logo-icon.png",

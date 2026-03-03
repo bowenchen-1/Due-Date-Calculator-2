@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import IvfPage from "../../components/ivf-page";
 
 export const metadata: Metadata = {
-  title: "IVF Due Date Calculator | Pregnancy Timeline Tool",
+  title: "IVF Due Date Calculator | Embryo Transfer Date",
   description:
-    "Calculate an IVF due date using embryo transfer details. View gestational age, timeline milestones, and export a privacy-safe summary.",
+    "Calculate your IVF due date based on your embryo transfer date, including 3-day and 5-day transfers. Get an estimated delivery date instantly.",
   keywords: [
     "ivf due date calculator",
     "embryo transfer due date calculator",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IVF Due Date Calculator",
     description:
-      "Calculate an IVF due date using embryo transfer details and view a clear pregnancy timeline.",
+      "Calculate your IVF due date based on your embryo transfer date, including 3-day and 5-day transfers. Get an estimated delivery date instantly.",
     type: "website",
     url: "/ivf",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "IVF Due Date Calculator",
     description:
-      "Calculate an IVF due date using embryo transfer details and view a clear pregnancy timeline.",
+      "Calculate your IVF due date based on your embryo transfer date, including 3-day and 5-day transfers. Get an estimated delivery date instantly.",
     images: ["/logo-full.png"]
   },
   robots: {
