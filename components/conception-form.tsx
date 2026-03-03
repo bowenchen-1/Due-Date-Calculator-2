@@ -23,8 +23,12 @@ export default function ConceptionForm({
         <label htmlFor="conception-date">{t(language, "conceptionLabel")}</label>
         <input
           id="conception-date"
-          type="date"
-          lang="en-CA"
+          type="text"
+          inputMode="numeric"
+          autoComplete="off"
+          placeholder="YYYY-MM-DD"
+          pattern="\d{4}-\d{2}-\d{2}"
+          maxLength={10}
           value={conceptionDate}
           onChange={(event) => onConceptionDateChange(event.target.value)}
         />

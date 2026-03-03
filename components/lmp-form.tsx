@@ -29,8 +29,12 @@ export default function LmpForm({
         <label htmlFor="lmp-date">{t(language, "lmpLabel")}</label>
         <input
           id="lmp-date"
-          type="date"
-          lang="en-CA"
+          type="text"
+          inputMode="numeric"
+          autoComplete="off"
+          placeholder="YYYY-MM-DD"
+          pattern="\d{4}-\d{2}-\d{2}"
+          maxLength={10}
           value={lmpDate}
           onChange={(event) => onLmpDateChange(event.target.value)}
         />

@@ -31,8 +31,12 @@ export default function IvfForm({
         <label htmlFor="ivf-transfer-date">{t(language, "ivfDateLabel")}</label>
         <input
           id="ivf-transfer-date"
-          type="date"
-          lang="en-CA"
+          type="text"
+          inputMode="numeric"
+          autoComplete="off"
+          placeholder="YYYY-MM-DD"
+          pattern="\d{4}-\d{2}-\d{2}"
+          maxLength={10}
           value={transferDate}
           onChange={(event) => onTransferDateChange(event.target.value)}
         />
