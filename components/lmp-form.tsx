@@ -30,6 +30,7 @@ export default function LmpForm({
         <input
           id="lmp-date"
           type="date"
+          lang="en-CA"
           value={lmpDate}
           onChange={(event) => onLmpDateChange(event.target.value)}
         />

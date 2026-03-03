@@ -32,6 +32,7 @@ export default function IvfForm({
         <input
           id="ivf-transfer-date"
           type="date"
+          lang="en-CA"
           value={transferDate}
           onChange={(event) => onTransferDateChange(event.target.value)}
         />

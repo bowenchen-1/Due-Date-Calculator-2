@@ -24,6 +24,7 @@ export default function ConceptionForm({
         <input
           id="conception-date"
           type="date"
+          lang="en-CA"
           value={conceptionDate}
           onChange={(event) => onConceptionDateChange(event.target.value)}
         />
