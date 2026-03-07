@@ -1,20 +1,15 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+import { SITE_URL } from "../lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (!siteUrl) {
-    return [];
-  }
-
   return [
     {
-      url: `${siteUrl}/`,
+      url: `${SITE_URL}/`,
       changeFrequency: "weekly",
       priority: 1
     },
     {
-      url: `${siteUrl}/ivf`,
+      url: `${SITE_URL}/ivf`,
       changeFrequency: "weekly",
       priority: 0.9
     }

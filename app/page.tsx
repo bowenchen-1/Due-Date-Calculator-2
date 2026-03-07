@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomePage from "../components/home-page";
+import { SITE_URL } from "../lib/site-url";
 
 export const metadata: Metadata = {
   title: "Pregnancy Due Date Calculator | Calculate by LMP or Conception",
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
     "gestational age calculator"
   ],
   alternates: {
-    canonical: "/"
+    canonical: `${SITE_URL}/`
   },
   openGraph: {
     title: "Pregnancy Due Date Calculator",
     description:
       "Calculate your pregnancy due date using your last menstrual period (LMP) or conception date. Get an estimated pregnancy timeline and week-by-week overview instantly.",
     type: "website",
-    url: "/",
+    url: `${SITE_URL}/`,
     images: [
       {
         url: "/logo-full.png",

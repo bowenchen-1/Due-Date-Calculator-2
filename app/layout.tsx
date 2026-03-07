@@ -1,10 +1,9 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+import { SITE_URL } from "../lib/site-url";
 
 export const metadata: Metadata = {
-  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
+  metadataBase: new URL(SITE_URL),
   applicationName: "Due Date Calculator",
   title: "Due Date Calculator",
   description: "Pregnancy due date calculator with a clear timeline and privacy-safe export.",

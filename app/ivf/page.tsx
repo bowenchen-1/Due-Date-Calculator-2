@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import IvfPage from "../../components/ivf-page";
+import { SITE_URL } from "../../lib/site-url";
 
 export const metadata: Metadata = {
   title: "IVF Due Date Calculator | Embryo Transfer Date",
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
     "day 5 embryo due date"
   ],
   alternates: {
-    canonical: "/ivf"
+    canonical: `${SITE_URL}/ivf`
   },
   openGraph: {
     title: "IVF Due Date Calculator",
     description:
       "Calculate your IVF due date based on your embryo transfer date, including 3-day and 5-day transfers. Get an estimated delivery date instantly.",
     type: "website",
-    url: "/ivf",
+    url: `${SITE_URL}/ivf`,
     images: [
       {
         url: "/logo-full.png",

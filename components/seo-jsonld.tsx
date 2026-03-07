@@ -2,6 +2,7 @@
 
 import { seoContent } from "../data/seo";
 import { t } from "../lib/i18n";
+import { SITE_URL } from "../lib/site-url";
 import { LanguageCode } from "../lib/types";
 
 export default function SeoJsonLd({
@@ -15,7 +16,7 @@ export default function SeoJsonLd({
   const block = content[page];
   const title = page === "home" ? t(language, "heroTitle") : t(language, "ivfHeroTitle");
   const description = page === "home" ? t(language, "heroSubtitle") : t(language, "ivfHeroSubtitle");
-  const path = page === "home" ? "/" : "/ivf";
+  const pageUrl = page === "home" ? `${SITE_URL}/` : `${SITE_URL}/ivf`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -25,7 +26,7 @@ export default function SeoJsonLd({
         name: title,
         description,
         inLanguage: language,
-        url: path,
+        url: pageUrl,
         isPartOf: {
           "@type": "WebSite",
           name: t(language, "siteName")
