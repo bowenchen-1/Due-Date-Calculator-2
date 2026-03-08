@@ -13,7 +13,7 @@ export default function Header({
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
-        <img className={styles.logo} src="/logo-icon.png" alt="" aria-hidden="true" />
+        <img className={styles.logo} src="/logo.png" alt="" aria-hidden="true" />
         <span>{t(language, "siteName")}</span>
       </div>
       <LanguageSwitcher language={language} onChange={onLanguageChange} />

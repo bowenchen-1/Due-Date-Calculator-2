@@ -143,7 +143,7 @@ export default function IvfPage() {
       <Header language={language} onLanguageChange={setLanguage} />
 
       <section className={styles.hero}>
-        <img className={styles.heroLogo} src="/logo-full.png" alt="" aria-hidden="true" />
+        <img className={styles.heroLogo} src="/logo.png" alt="" aria-hidden="true" />
         <h1>{t(language, "ivfHeroTitle")}</h1>
         <p>{t(language, "ivfHeroSubtitle")}</p>
       </section>

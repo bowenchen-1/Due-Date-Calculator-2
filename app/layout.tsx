@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: "Due Date Calculator",
   description: "Pregnancy due date calculator with a clear timeline and privacy-safe export.",
   icons: {
-    icon: "/logo-icon.png",
-    shortcut: "/logo-icon.png",
-    apple: "/logo-icon.png"
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png"
   }
 };
 

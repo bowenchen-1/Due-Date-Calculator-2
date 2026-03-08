@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/`,
     images: [
       {
-        url: "/logo-full.png",
-        alt: "Pregnancy Timeline Tool"
+        url: "/logo.png",
+        alt: "Due Date Calculator logo"
       }
     ]
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Pregnancy Due Date Calculator",
     description:
       "Calculate your pregnancy due date using your last menstrual period (LMP) or conception date. Get an estimated pregnancy timeline and week-by-week overview instantly.",
-    images: ["/logo-full.png"]
+    images: ["/logo.png"]
   },
   robots: {
     index: true,

@@ -227,7 +227,7 @@ export default function HomePage() {
       <Header language={language} onLanguageChange={setLanguage} />
 
       <section className={styles.hero}>
-        <img className={styles.heroLogo} src="/logo-full.png" alt="" aria-hidden="true" />
+        <img className={styles.heroLogo} src="/logo.png" alt="" aria-hidden="true" />
         <h1>{t(language, "heroTitle")}</h1>
         <p>{t(language, "heroSubtitle")}</p>
       </section>

@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/ivf`,
     images: [
       {
-        url: "/logo-full.png",
-        alt: "Pregnancy Timeline Tool"
+        url: "/logo.png",
+        alt: "Due Date Calculator logo"
       }
     ]
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "IVF Due Date Calculator",
     description:
       "Calculate your IVF due date based on your embryo transfer date, including 3-day and 5-day transfers. Get an estimated delivery date instantly.",
-    images: ["/logo-full.png"]
+    images: ["/logo.png"]
   },
   robots: {
     index: true,
